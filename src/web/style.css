@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul#workspace-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul#workspace-list li {
+  margin: 8px 0;
+  padding: 8px;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul#workspace-list li:hover {
+  background-color: #ddd;
+}
+
+#add-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+}
+
+#add-btn:hover {
+  background-color: #45a049;
+}
