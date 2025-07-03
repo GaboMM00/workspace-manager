@@ -14,14 +14,23 @@ manager = WorkspaceManager()
 
 eel.init('src/web')
 
+# @eel.expose
+# def get_workspace_names():
+#     return manager.get_workspace_names()
 @eel.expose
-def get_workspace_names():
-    return manager.get_workspace_names()
+def get_workspaces():
+    workspaces = []
+    for name in manager.get_workspace_names():
+        links = manager.get_links(name)
+        workspaces.append({
+            "name": name,
+            "links": links
+        })
+    return workspaces
 
 @eel.expose
 def create_workspace(name, links):
-    link_list = [link.strip() for link in links.split(',')]
-    manager.create_workspace(name, link_list)
+    manager.create_workspace(name, links)
     return True
 
 @eel.expose
@@ -32,5 +41,5 @@ def open_workspace(name):
         return True
     else:
         return False
-
-eel.start('index.html', size=(400, 400))
+    
+eel.start('index.html', size=(400, 500))
