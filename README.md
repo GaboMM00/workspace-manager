@@ -78,9 +78,7 @@ Workspace-Manager/
 │   ├── core/           # Business logic (workspace and link management)
 │   ├── web/            # UI (HTML, CSS, TypeScript)
 │   └── main.py         # Main entry point
-├── workspaces.json     # Workspaces data file (ignored by git)
-├── README.md
-└── LICENSE
+└── README.md
 ```
 
 ---
@@ -115,7 +113,7 @@ This project is licensed under the **GNU GPLv3 (General Public License v3.0)**, 
 
 ## 🙏 Credits
 
-Developed and maintained by \[Your Name or Username].
+Developed and maintained by \[Medina Miramontes Gabriel Alejadro].
 
 Special thanks to the Eel community and the modern frontend tools that inspired this project.
 
